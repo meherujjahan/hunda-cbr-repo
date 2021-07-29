@@ -6,8 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hunda Website</title>
+        <!--------------
+          font awesome 
+        --------------->
+        <script src="https://kit.fontawesome.com/c5589b6d71.js" crossorigin="anonymous"></script>
         <!------------------- 
-                Stylesheet 
+             Stylesheet 
         ---------------------->
         <link rel="stylesheet" href="style.css">
         <!---------------- 
@@ -31,13 +35,13 @@
                                         aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse text-end" id="navbarNavAltMarkup">
+                                <div class="position-fixed collapse navbar-collapse text-end" id="navbarNavAltMarkup">
                                         <div class="navbar-nav ">
-                                                <a class="nav-link active text-white" aria-current="page"
+                                                <a class="nav-link active text-danger" aria-current="page"
                                                         href="#">Home</a>
-                                                <a class="nav-link text-white" href="#">Shop</a>
-                                                <a class="nav-link text-white" href="#">News</a>
-                                                <a class="nav-link text-white" href="#">Contact</a>
+                                                <a class="nav-link text-danger" href="#News">News</a>
+                                                <a class="nav-link text-danger" href="#Shop">Shop</a>
+                                                <a class="nav-link text-danger" href="#">Contact</a>
                                                 <a class="nav-link disabled" href="#" tabindex="-1">
                                                         <button class="button">Login</button>
                                         </div>
@@ -46,65 +50,73 @@
                 </nav>
                 <!-- header section start-->
                 <section>
-                        <div class="header-section row d-flex  align-items-center justify-content-around pb-5">
-                                <div class="col-12 col-lg-7">
-                                        <div class="text-white ps-5 ">
-                                                <p> Computer-controller digital transistorized with electronic advance
+                        <div class="row d-flex justify-content-between align-items-center pb-5">
+                                <div class="col-12 col-lg-6">
+                                        <div class="ps-5 ">
+                                                <p class="text-white"> Computer-controller digital transistorized with
+                                                        electronic advance
                                                 </p>
-                                                <h1 class="fs-1 fw-bold">Honda CBR 300R</h1>
-                                                <p>amet minim mollit non deseerint ullamco est sit aliqua dolor do amet
+                                                <h1 class=" text-white fs-1 fw-bolder">Honda CBR 300R</h1>
+                                                <p class="text-white">amet minim mollit non deseerint ullamco est sit
+                                                        aliqua dolor do amet
                                                         sint
                                                         .Velt
                                                         offical consequent duis enim velt mollit.Exercitation veniam
                                                         consequent
                                                         sunt
                                                         nostrud.</p>
-                                                <button class="buttons"> Purchase</button>
+                                                <a class="buttons text-decoration-none m-4" href="#Model">Purchase</a>
                                         </div>
 
                                 </div>
-                                <div class="col-12 col-lg-5">
-                                        <img class="pe-5" src="images/header-bike.png" alt="">
+                                <div class="col-12 col-lg-6">
+                                        <img class="img-fluid pe-5" src="images/header-bike.png" alt="">
                                 </div>
                         </div>
                 </section>
                 <!-- header section end -->
         </header>
         <!-- header end -->
+
         <main>
                 <!-- section-1 -->
                 <section class="container">
-                        <div class="d-flex flex-column align-items-center pt-3 pb-5">
+                        <!-- fectured bike -->
+                        <div class="d-flex flex-column align-items-center pt-5 pb-5">
                                 <h1 class="titles text-dark fs-1 ">Fetured Bikes 2021</h1>
                                 <p><span class="title">Best <u>bike</u> collection</span></p>
                         </div>
                         <div>
-                                <div class="row pt-5 g-2">
+                                <div class="row pt-5 g-2 pb-5">
                                         <div class="col-12 col-lg-4">
-                                                <img width="350px" src="images/feature-bike.jpg" alt="">
+                                                <img class="bike-img" width="350px" src="images/feature-bike.jpg"
+                                                        alt="">
                                         </div>
                                         <div class="col-12 col-lg-4">
                                                 <img width="350px" src="images/feature-bike.jpg" alt="">
                                         </div>
                                         <div class="col-12 col-lg-4">
-                                                <img width="350px" src="images/feature-bike.jpg" alt="">
+                                                <img class="bike-img" width="350px" src="images/feature-bike.jpg"
+                                                        alt="">
                                         </div>
                                 </div>
                         </div>
                 </section>
-                <section class="container">
+                <!-- section-2 -->
+                <section class="container" id="News">
                         <!-- section-2 -->
                         <div class="d-flex flex-column align-items-center pt-5">
                                 <h1 class="titles text-dark fs-1 ">Latest News</h1>
-
+                                <!-- card-1 -->
                         </div>
-                        <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 pt-5 rounded-lg pt-5">
                                 <div class="col">
                                         <div class="card h-100">
-                                                <img src="images/bike-1.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                        <h5 class="card-title">Ducati XDIAVEL S 73</h5>
-                                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                <img src="images/bike-1.png" class="px-3 py-3 card-img-top" alt="...">
+                                                <div class="card-body  text-dark">
+                                                        <h5 class="card-title fs-2 fw-bold ">Ducati XDIAVEL S 73</h5>
+                                                        <p class="card-text fw-normal">Lorem ipsum dolor sit amet,
+                                                                consectetur
                                                                 adipisicing elit. Quam saepe nihil adipisci excepturi
                                                                 unde vero tempore magnam impedit soluta dolore,
                                                                 cupiditate ad dicta dolores quibusdam. Quasi praesentium
@@ -115,9 +127,9 @@
                                 </div>
                                 <div class="col">
                                         <div class="card h-100">
-                                                <img src="images/bike-2.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                        <h5 class="card-title">Motorcycles & Scooters</h5>
+                                                <img src="images/bike-2.png" class="px-3 py-3 card-img-top" alt="...">
+                                                <div class="card-body  text-dark">
+                                                        <h5 class="card-title fs-2 fw-bold">Motorcycles & Scooters</h5>
                                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur
                                                                 adipisicing elit. Numquam error voluptate repudiandae
                                                                 eum? Accusamus aspernatur, maiores saepe architecto
@@ -129,9 +141,9 @@
                                 </div>
                                 <div class="col">
                                         <div class="card h-100">
-                                                <img src="images/bike-3.png" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                        <h5 class="card-title">2021 Honda CBR500R</h5>
+                                                <img src="images/bike-3.png" class="px-3 py-3 card-img-top" alt="...">
+                                                <div class="card-body text-dark">
+                                                        <h5 class="card-title fs-2 fw-bold">2021 Honda CBR500R</h5>
                                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur
                                                                 adipisicing elit. Sunt ipsa officia voluptatibus itaque
                                                                 eaque temporibus, pariatur praesentium, quasi totam
@@ -144,12 +156,414 @@
                         </div>
 
                 </section>
-                <section>
+                <!-- section-3 -->
+                <section class="container" id="Shop">
+                        <div class="d-flex flex-column align-items-center pb-5 pt-5">
+                                <h1 class="titles text-dark fs-1 ">Bikes Shop</h1>
+                                <div class="row row-cols-1 row-cols-md-3 pt-5 pb-5 g-4">
+                                        <div class="col">
+                                                <div class="card">
+                                                        <img src="images/bike-1.png" class="p-3 card-img-top" alt="...">
+                                                        <div class="card-body  text-dark">
+                                                                <h5 class="card-title fs-1 fw-bold">Bike Detailes</h5>
+                                                                <p class="card-text fw-normal">Lorem ipsum dolor sit,
+                                                                        amet
+                                                                        consectetur
+                                                                        adipisicing elit. Aperiam dolor quia aspernatur
+                                                                        veniam
+                                                                        maiores. Repudiandae quibusdam, consequuntur
+                                                                        beatae rem,
+                                                                        est voluptatem nulla incidunt, distinctio
+                                                                        expedita ea
+                                                                        ipsam non unde nihil.</p>
 
+                                                                <button class=" buttons "> BUY NOW</button>
+
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="card">
+                                                        <img src="images/bike-2.png" class="p-3 card-img-top" alt="...">
+                                                        <div class="card-body text-dark">
+                                                                <h5 class="card-title fs-1 fw-bold">Bike Detailes</h5>
+                                                                <p class="card-text fw-normal">Lorem ipsum dolor sit
+                                                                        amet
+                                                                        consectetur
+                                                                        adipisicing elit. Iure libero dolorem commodi,
+                                                                        itaque
+                                                                        tempore aspernatur nulla hic vero exercitationem
+                                                                        optio
+                                                                        facere quos magni dolor laudantium quod?
+                                                                        Sapiente est
+                                                                        officiis blanditiis?</p>
+                                                                <button class=" buttons "> BUY NOW</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="card">
+                                                        <img src="images/bike-3.png" class=" p-3 card-img-top"
+                                                                alt="...">
+                                                        <div class="card-body text-dark">
+                                                                <h5 class="card-title fs-1 fw-bold">Bike Detailes</h5>
+                                                                <p class="card-text fw-normal">Lorem ipsum dolor sit
+                                                                        amet
+                                                                        consectetur
+                                                                        adipisicing elit. Rem aperiam placeat
+                                                                        necessitatibus
+                                                                        corrupti laborum, voluptatum a ducimus repellat
+                                                                        nihil
+                                                                        quidem inventore earum consectetur suscipit!
+                                                                        Tenetur
+                                                                        labore dicta aliquid deserunt maxime!</p>
+                                                                <button class=" buttons "> BUY NOW</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                </div>
                 </section>
-        </main>
-        <footer>
+                <section class="container">
 
+                        <div class="row row-cols-1 row-cols-md-3 pb-5 g-4">
+                                <div class="col">
+                                        <div class="card">
+                                                <img class="bike-img p-3" src="images/bike-3.png"
+                                                        class="p-3 card-img-top" alt="...">
+                                                <div class="card-body">
+                                                        <h5 class="card-title fs-1 fw-bold">Bike Detailes</h5>
+                                                        <p class="card-text fw-normal">Lorem ipsum dolor sit,
+                                                                amet
+                                                                consectetur
+                                                                adipisicing elit. Aperiam dolor quia aspernatur
+                                                                veniam
+                                                                maiores. Repudiandae quibusdam, consequuntur
+                                                                beatae rem,
+                                                                est voluptatem nulla incidunt, distinctio
+                                                                expedita ea
+                                                                ipsam non unde nihil.</p>
+
+                                                        <button class=" buttons "> BUY NOW</button>
+
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="card">
+                                                <img class="bike-img p-3" src="images/bike-2.png"
+                                                        class="p-3 card-img-top" alt="...">
+                                                <div class="card-body">
+                                                        <h5 class="card-title fs-1 fw-bold">Bike Detailes</h5>
+                                                        <p class="card-text fw-normal">Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur
+                                                                adipisicing elit. Iure libero dolorem commodi,
+                                                                itaque
+                                                                tempore aspernatur nulla hic vero exercitationem
+                                                                optio
+                                                                facere quos magni dolor laudantium quod?
+                                                                Sapiente est
+                                                                officiis blanditiis?</p>
+                                                        <button class=" buttons "> BUY NOW</button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="card">
+                                                <img class="bike-img p-3" src="images/bike-1.png"
+                                                        class=" p-3 card-img-top" alt="...">
+                                                <div class="card-body">
+                                                        <h5 class="card-title fs-1 fw-bold">Bike Detailes</h5>
+                                                        <p class="card-text fw-normal">Lorem ipsum dolor sit
+                                                                amet
+                                                                consectetur
+                                                                adipisicing elit. Rem aperiam placeat
+                                                                necessitatibus
+                                                                corrupti laborum, voluptatum a ducimus repellat
+                                                                nihil
+                                                                quidem inventore earum consectetur suscipit!
+                                                                Tenetur
+                                                                labore dicta aliquid deserunt maxime!</p>
+                                                        <button class=" buttons "> BUY NOW</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                </section>
+                <!-- section-4 -->
+                <section class="container" id="Model">
+                        <div class="row pt-5 pb-5 my-5">
+                                <div class="col-12 col-lg-5">
+                                        <img class="img-fluid" src="images/bike-4.jpg" alt="">
+                                </div>
+                                <div class="col-12 col-lg-7 ps-5">
+                                        <h1 class="title">About Hunda CBR</h1>
+                                        <p class="fst-normal">In terms of Honda motorcycles, "CBR" stands for cross beam
+                                                racer. ... While
+                                                some sports bike enthusiasts believe that "CBR" stands for city bike
+                                                racing or city bike racer, others believe it stands for closed body
+                                                racer.</p>
+                                        <h2>Brand : Honda</h2>
+                                        <h2>Model : CBR 150</h2>
+                                        <h2>Max power : 16.87 BHP@ 9000 rpm</h2>
+                                        <h2>Type : Sports</h2>
+                                        <h2>price : 480,000(ABS) </h2>
+                                </div>
+                        </div>
+                </section>
+                <!-- section-5 -->
+                <section class="container">
+                        <div class="d-flex flex-column align-items-center my-5 px-5 py-5">
+                                <h1 class="titles text-dark fs-1 ">Happy<span class="title"> Client says</span></h1>
+                        </div>
+                        <!---------- 
+                           card-2 
+                        ----------->
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                        <div class="card-2 h-100">
+                                                <div><img src="images/user-1.png" class="card-2-img-top" alt="...">
+                                                </div>
+
+                                                <br>
+                                                <div>
+                                                        <p class="card-text-2">Stele helps you see how many more days
+                                                                you
+                                                                need to work to reach your financial goal for the month
+                                                                and year. </p>
+                                                </div>
+                                                <div class="d-inline">
+                                                        <span class="icon "> <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i></span>
+                                                        <i class="far fa-star"></i>
+                                                </div><br>
+                                                <div>
+                                                        <h5 class="text-primary">Regina Miles</h5>
+                                                        <br>
+                                                        <h5 class="px-3">Bankar</h5>
+                                                </div>
+
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="card-2 border- h-100">
+                                                <div> <img src="images/user-2.png" class="card-2-img-top" alt="...">
+                                                </div>
+                                                <br>
+
+                                                <div>
+                                                        <p class="card-text-2">Stele helps you see how many more days
+                                                                you
+                                                                need to work to reach your financial goal for the month
+                                                                and year.</p>
+                                                </div>
+                                                <div class="d-inline">
+                                                        <span class="icon"> <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i></span>
+                                                        <i class="far fa-star"></i>
+                                                </div><br>
+                                                <div>
+                                                        <h5 class="text-primary">Regina Miles</h5>
+                                                        <br>
+                                                        <h5 class="px-3">Bankar</h5>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="card-2 h-100">
+                                                <div> <img src="images/user-3.jpg" class="rounded-circle card-2-img-top"
+                                                                alt="..."></div>
+
+                                                <br>
+                                                <div>
+                                                        <p class="card-text-2">Stele helps you see how many more days
+                                                                you
+                                                                need to work to reach your financial goal for the month
+                                                                and year.</p>
+                                                </div>
+                                                <div class="d-inline">
+                                                        <span class="icon "> <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i></span>
+                                                        <i class="far fa-star"></i>
+                                                </div><br>
+                                                <div>
+                                                        <h5 class="text-primary">Regina Miles</h5>
+                                                        <br>
+                                                        <h5 class="px-3">Bankar</h5>
+                                                </div>
+
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <!-- section-6 -->
+                <section class="container ">
+                        <!-- Questions -->
+                        <div class="d-flex flex-column align-items-center my-5 px-5 py-5">
+                                <h1 class="titles text-dark fs-1 ">Frequently Asked<span class="title"> Qustions</span>
+                                </h1>
+                        </div>
+                        <div class="row d-flex justify-content-between align-items-center pb-5">
+                                <div class="col-12 col-lg-6">
+                                        <img width="500px" class="p-5" src="images/faq.png" alt="">
+                                </div>
+
+                                <div class="col-12 col-lg-6 gy-3">
+                                        <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                        <h2 class="text-dark accordion-header" id="headingOne">
+                                                                <button class="accordion-button f" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseOne"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseOne">
+                                                                        <h5> What are the most important thing I should
+                                                                                know
+                                                                                about riding a bike?</h5>
+                                                                </button>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                                                aria-labelledby="headingOne"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                        Sefty frist always obey the rules of the road
+                                                                        .Obey all traffic
+                                                                        signal, sings and laws. Get in the mind set of
+                                                                        "driving" your
+                                                                        bike --not last "riding" your bike.This will
+                                                                        help you more
+                                                                        focused compliant bike rider.
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseTwo"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="collapseTwo">
+                                                                        <h5> How can I tell if my helmat is pld and i
+                                                                                need a
+                                                                                new one?</h5>
+                                                                </button>
+                                                        </h2>
+                                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingTwo"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                        Sefty frist always obey the rules of the road
+                                                                        .Obey all traffic
+                                                                        signal, sings and laws. Get in the mind set of
+                                                                        "driving" your
+                                                                        bike --not last "riding" your bike.This will
+                                                                        help you more
+                                                                        focused compliant bike rider,
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseThree"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="collapseThree">
+                                                                        <h5> What rules should i follow when riding my
+                                                                                bike?</h5>
+                                                                </button>
+                                                        </h2>
+                                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingThree"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+
+                                                                        Sefty frist always obey the rules of the road
+                                                                        .Obey all traffic
+                                                                        signal, sings and laws. Get in the mind set of
+                                                                        "driving" your
+                                                                        bike --not last "riding" your bike.This will
+                                                                        help you more
+                                                                        focused compliant bike rider,
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseThree"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="collapseThree">
+                                                                        <h5> My Bike has been in storege is safe to
+                                                                                ride?</h5>
+                                                                </button>
+                                                        </h2>
+                                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingThree"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+
+                                                                        Sefty frist always obey the rules of the road
+                                                                        .Obey all traffic
+                                                                        signal, sings and laws. Get in the mind set of
+                                                                        "driving" your
+                                                                        bike --not last "riding" your bike.This will
+                                                                        help you more
+                                                                        focused compliant bike rider,
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+
+        </main>
+
+        <footer class="footer-tag mt-5">
+                <div class="row my-5">
+                        <div class="col-lg-6 p-5">
+                                <li>download</li>
+                                <li>license</li>
+                                <li> About</li>
+                                <li> features</li>
+                                <li> Pricing </li>
+                                <li> Help </li>
+                                <li> Privacy policy </li>
+                        </div>
+
+
+
+                        <div class="col-lg-6 p-5">
+                                <div>
+                                        <h6>Get The APP</h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+
+                                        <div class="ps-2">
+                                                <small> Download on the
+                                                        <h6> <i class="fab fa-apple"></i> APP STORE</h6>
+                                                </small>
+                                                <br>
+                                                <small> Download on the
+                                                        <h5><i class="fab fa-google-play"></i>Google Play</h5>
+                                                </small>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
         </footer>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
